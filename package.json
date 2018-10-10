@@ -1,0 +1,40 @@
+{
+  "name": "angular-country-list",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "open": "concurrently \"node server/index.js\" \"npx opn http://localhost:8100\"",
+    "start": "npx webpack && npm run open",
+    "test": "npx karma start"
+  },
+  "author": "Sergio Martino",
+  "license": "ISC",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.3.1",
+    "angular": "^1.7.5",
+    "angular-route": "^1.7.5",
+    "babel-polyfill": "^6.26.0",
+    "bulma": "^0.7.1",
+    "csvtojson": "^2.0.8",
+    "express": "^4.16.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.1.2",
+    "@babel/preset-env": "^7.1.0",
+    "angular-mocks": "^1.7.5",
+    "babel-loader": "^8.0.4",
+    "concurrently": "^4.0.1",
+    "css-loader": "^1.0.0",
+    "file-loader": "^2.0.0",
+    "jasmine": "^3.2.0",
+    "karma": "^3.0.0",
+    "karma-chrome-launcher": "^2.2.0",
+    "karma-jasmine": "^1.1.2",
+    "karma-webpack": "^3.0.5",
+    "opn-cli": "^3.1.0",
+    "style-loader": "^0.23.0",
+    "url-loader": "^1.1.1",
+    "webpack": "^4.20.2",
+    "webpack-cli": "^3.1.2"
+  }
+}
